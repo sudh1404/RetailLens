@@ -1,0 +1,43 @@
+{
+    "total_rows": 1067371,
+    "total_columns": 9,
+    "source_sheets": {
+        "Year 2010-2011": 541910,
+        "Year 2009-2010": 525461
+    },
+    "duplicate_rows": 12133,
+    "missing_values": {
+        "invoice": 0,
+        "stock_code": 0,
+        "description": 4382,
+        "quantity": 0,
+        "invoice_date": 0,
+        "unit_price": 0,
+        "customer_id": 243007,
+        "country": 0,
+        "source_sheet": 0
+    },
+    "missing_percentages": {
+        "invoice": 0.0,
+        "stock_code": 0.0,
+        "description": 0.41,
+        "quantity": 0.0,
+        "invoice_date": 0.0,
+        "unit_price": 0.0,
+        "customer_id": 22.77,
+        "country": 0.0,
+        "source_sheet": 0.0
+    },
+    "cancellation_invoice_rows": 19494,
+    "negative_quantity_rows": 22950,
+    "zero_quantity_rows": 0,
+    "zero_price_rows": 6202,
+    "negative_price_rows": 5,
+    "missing_customer_id_rows": 243007,
+    "unique_invoice_numbers": 53628,
+    "unique_products": 5305,
+    "unique_customers": 5942,
+    "unique_countries": 43,
+    "earliest_transaction": "2009-12-01 07:45:00",
+    "latest_transaction": "2011-12-09 12:50:00"
+}
