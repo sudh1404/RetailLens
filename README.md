@@ -1,4 +1,4 @@
-# RevenueGuard — Retail Revenue & Data Quality Analytics
+# RetailLens — Retail Revenue & Customer Intelligence
 
 ### A reproducible analytics workflow for cleaning, validating and analysing 1M+ retail transaction records.
 
@@ -35,7 +35,7 @@
 
 Retail transaction data can contain duplicate records, missing customer identifiers, cancellations, negative quantities and inconsistent values. If these issues are not understood before analysis, they can affect revenue calculations, customer metrics and business reporting.
 
-**RevenueGuard** is an end-to-end retail analytics project built around the [Online Retail II dataset](https://archive.ics.uci.edu/dataset/502/online+retail+ii). It establishes a repeatable workflow to inspect and prepare transaction data, load it into PostgreSQL, investigate business performance with SQL, and present the results through Power BI.
+**RetailLens** is an end-to-end retail analytics project built around the [Online Retail II dataset](https://archive.ics.uci.edu/dataset/502/online+retail+ii). It establishes a repeatable workflow to inspect and prepare transaction data, load it into PostgreSQL, investigate business performance with SQL, and present the results through Power BI.
 
 The project brings together two connected areas of work:
 
@@ -211,7 +211,7 @@ The Power BI report connects the analytical data to business-facing measures and
 
 The Power BI report is available at:
 
-[`dashboard/RevenueGuard_dashboard.pbix`](dashboard/RevenueGuard_dashboard.pbix)
+[`dashboard/RetailLens_dashboard.pbix`](dashboard/RetailLens_dashboard.pbix)
 
 The dashboard focuses on the project's retail performance and customer intelligence outputs, including:
 
@@ -226,7 +226,7 @@ Open the PBIX file in Power BI Desktop. If the report uses a local PostgreSQL co
 ## Repository Structure
 
 ```text
-RevenueGuard/
+RetailLens/
 │
 ├── src/
 │   ├── profile_data.py          # Source data profiling and quality report
@@ -250,7 +250,7 @@ RevenueGuard/
 │   └── data_quality_summary.json
 │
 ├── dashboard/
-│   └── RevenueGuard_dashboard.pbix
+│   └── RetailLens_dashboard.pbix
 │
 ├── requirements.txt
 ├── .gitignore
@@ -271,8 +271,8 @@ Generated data files are kept outside version control and are created locally wh
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/sudh1404/RevenueGuard.git
-cd RevenueGuard
+git clone https://github.com/sudh1404/RetailLens.git
+cd RetailLens
 ```
 
 ### 2. Create a Virtual Environment
@@ -344,14 +344,14 @@ data/processed/retail_transactions.csv
 
 ### 7. Configure PostgreSQL
 
-Create a PostgreSQL database named `revenueguard` (or use another name and set it in the environment).
+Create a PostgreSQL database named `retaillens` (or use another name and set it in the environment).
 
 Create a local `.env` file in the repository root:
 
 ```env
 DB_HOST=localhost
 DB_PORT=5432
-DB_NAME=revenueguard
+DB_NAME=retaillens
 DB_USER=postgres
 DB_PASSWORD=your_local_password
 ```
@@ -387,7 +387,7 @@ The test suite covers row preservation, transaction classification, gross-sales 
 
 ### 11. Open the Power BI Report
 
-Open `dashboard/RevenueGuard_dashboard.pbix` in Power BI Desktop and configure the PostgreSQL connection if prompted.
+Open `dashboard/RetailLens_dashboard.pbix` in Power BI Desktop and configure the PostgreSQL connection if prompted.
 
 ## Data Validation & Testing
 
@@ -436,7 +436,7 @@ Potential next steps include:
 **Sudharshana Suryanarayanan**  
 B.Tech — Data Science and Artificial Intelligence, IIIT Dharwad
 
-[GitHub Profile](https://github.com/sudh1404) · [RevenueGuard Repository](https://github.com/sudh1404/RevenueGuard)
+[GitHub Profile](https://github.com/sudh1404) · [RetailLens Repository](https://github.com/sudh1404/RetailLens)
 
 ---
 
